@@ -59,9 +59,9 @@ public class RNImageSizeModule extends ReactContextBaseJavaModule {
                 Bitmap bitmap = BitmapFactory.decodeStream((InputStream) url.getContent());
                 height = bitmap.getHeight();
                 InputStream input = this.reactContext.getContentResolver().openInputStream(Uri.parse(uri));
-                Bitmap bitmap = BitmapFactory.decodeStream((InputStream) input);
-                height = bitmap.getHeight();
-                width = bitmap.getWidth();
+                Bitmap bitmap1 = BitmapFactory.decodeStream((InputStream) input);
+                height = bitmap1.getHeight();
+                width = bitmap1.getWidth();
             }
 
             WritableMap map = Arguments.createMap();
